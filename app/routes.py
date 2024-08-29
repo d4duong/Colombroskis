@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect, url_for
 from .game_logic import get_game_data, process_level
 
 main = Blueprint('main', __name__)
@@ -12,15 +12,15 @@ def index():
 @main.route('/level/<int:level>', methods=['GET', 'POST'])
 def level(level):
     if request.method == 'POST':
-        # TODO: Process player input and move to the next level or provide feedback
         player_input = request.form.get('player_input')
         success, feedback = process_level(level, player_input)
 
         if success:
-            # TODO: Redirect to the next level or display victory screen if it's the final level
-            return render_template('level_complete.html', level=level)
+            # Redirect to the next level
+            next_level = level + 1
+            return redirect(url_for('main.level', level=next_level))
         else:
-            # TODO: Return the same level with feedback if the input was incorrect
+            # Return the same level with feedback if the input was incorrect
             data = get_game_data(level=level)
             return render_template('level.html', data=data, feedback=feedback)
 
