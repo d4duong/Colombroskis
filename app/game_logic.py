@@ -11,6 +11,11 @@ def get_game_data(level):
             "hint": "Think about common encryption methods.",
             "question": "Decode the encrypted message: 'Uryyb Jbeyq!'"
         },
+        3: {
+            "objective": "SQL Injection",
+            "hint": "It's all in the tutorial.",
+            "question": "Bypass the login form using SQL injection!"
+        },
         # TODO: Add more levels with increasing complexity
     }
     return levels.get(level, {})
