@@ -17,8 +17,9 @@ def get_game_data(level):
         2: {
             "level": 2,
             "objective": "Decode the Encryption",
-            "hint": "Think about common encryption methods.",
-            "question": "Decode the encrypted message: 'Uryyb Jbeyq!'"
+            "description": "You have found the encrypted password file. You need to decode it to access the base.",
+            "hint": "Think about common encryption methods like ROT13 and substitution cipher. Try using an website like cyberChef to decode the message.",
+            "question": "Decode the encrypted password and input the decrypted password into the answer bar."
         },
         # TODO: Add more levels with increasing complexity
     }
