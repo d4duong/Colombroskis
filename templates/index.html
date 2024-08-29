@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to the Coding Adventure Game!</h1>
+    <p class="lead">Level {{ data.level }}: {{ data.question }}</p>
+    <hr class="my-4">
+    <p>Start your adventure by solving the first coding puzzle.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Start Game</a>
+</div>
+{% endblock %}
