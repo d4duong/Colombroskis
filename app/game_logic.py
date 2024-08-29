@@ -10,11 +10,10 @@ def get_game_data(level):
                 "1. `cd Downloads`\n"
                 "2. `ls` (to list the files in the directory)\n"
                 "3. `cat level1_password.txt` (to view the content of the file)\n"
-                "Then, use CyberChef to decrypt the password using ROT13."
             ),
             "question": "Download the file below and find the encypted password.",
             "file_link": "/static/files/level1_password.txt", 
-            "final_answer": "W!tp@$sw3rd",
+            "final_answer": "J!gc@$fj3eq",
         },
         2: {
             "level": 2,
@@ -30,8 +29,8 @@ def get_game_data(level):
 def process_level(level, player_input):
     # TODO: Implement the logic for checking the player's input against the correct answer]
     correct_answers = {
-        1: "W!tp@$sw3rd",  # Final decrypted answer for Level 1
-        2: "Hello World!",  # Example answer for Level 2 (ROT13 decoding)
+        1: "J!gc@$fj3eq",  # Final decrypted answer for Level 1
+        2: "W!tp@$sw3rd",  # Example answer for Level 2 (ROT13 decoding)
         # TODO: Add more correct answers for additional levels
     }
 

@@ -6,7 +6,8 @@
     <p class="lead">{{ data.hint }}</p>
     <hr class="my-4">
     <p>{{ data.question }}</p>
-
+    
+    {% if data.level == 1 %}
     <!-- File download link -->
     <a href="{{ data.file_link }}" class="btn btn-secondary" download>Download File</a>
     <br><br>
@@ -18,11 +19,25 @@
             <li><code>cat level1_password.txt</code> - Display the contents of the file</li>
         </ol>
     </p>
-    <p>Once you have the password, go to <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a> to decrypt it using ROT13.</p>
     {% if feedback %}
     <div class="alert alert-info">{{ feedback }}</div>
     {% endif %}
     
+    <form method="POST">
+        <div class="mb-3">
+            <label for="player_input">Enter the encrypted password:</label>
+            <input type="text" class="form-control" id="player_input" name="player_input" placeholder="Type your answer here">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    {elif data.level == 2} 
+
+    <a href="{{ data.file_link }}" class="btn btn-secondary" download>Download File</a>
+    <br><br>
+    <p>Once you have the password, go to <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a> to decrypt it using ROT13.</p>
+    {% endif %}
+
     <form method="POST">
         <div class="mb-3">
             <label for="player_input">Enter the decrypted password:</label>
@@ -30,5 +45,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    
+    {% elif data.level == 2 %}
 </div>
 {% endblock %}
