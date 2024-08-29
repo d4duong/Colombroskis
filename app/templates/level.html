@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Level {{ data.level }}: {{ data.objective }}</h1>
+    <p class="lead">{{ data.hint }}</p>
+    <hr class="my-4">
+    <p>{{ data.question }}</p>
+    <!-- TODO: Display feedback for the player's previous input -->
+    {% if feedback %}
+    <div class="alert alert-info">{{ feedback }}</div>
+    {% endif %}
+    <form method="POST">
+        <div class="form-group">
+            <label for="player_input">Enter your command:</label>
+            <input type="text" class="form-control" id="player_input" name="player_input" placeholder="Type your command here">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
