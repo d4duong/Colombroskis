@@ -3,7 +3,13 @@ def get_game_data(level):
     levels = {
         1: {
             "objective": "Breach the Perimeter Firewall",
-            "hint": "Download the file and decrypt the password using ROT13.",
+            "hint": (
+                "Download the file and navigate to the Downloads directory using the following commands:\n"
+                "1. `cd Downloads`\n"
+                "2. `ls` (to list the files in the directory)\n"
+                "3. `cat level1_password.txt` (to view the content of the file)\n"
+                "Then, use CyberChef to decrypt the password using ROT13."
+            ),
             "question": "Download the file below and find the correct password.",
             "file_link": "/static/files/level1_password.txt",  # Link to the downloadable file
             "final_answer": "W!tp@$sw3rd"

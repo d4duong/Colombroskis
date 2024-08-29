@@ -10,14 +10,21 @@
     <!-- File download link -->
     <a href="{{ data.file_link }}" class="btn btn-secondary" download>Download File</a>
     <br><br>
-    <p>After downloading the file, go to <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a> to decrypt the password using ROT13.</p>
-
+    <p>
+        After downloading the file, follow these steps in your terminal:
+        <ol>
+            <li><code>cd Downloads</code> - Navigate to your Downloads directory</li>
+            <li><code>ls</code> - List the files in the directory to ensure the file is there</li>
+            <li><code>cat level1_password.txt</code> - Display the contents of the file</li>
+        </ol>
+    </p>
+    <p>Once you have the password, go to <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a> to decrypt it using ROT13.</p>
     {% if feedback %}
     <div class="alert alert-info">{{ feedback }}</div>
     {% endif %}
     
     <form method="POST">
-        <div class="form-group">
+        <div class="mb-3">
             <label for="player_input">Enter the decrypted password:</label>
             <input type="text" class="form-control" id="player_input" name="player_input" placeholder="Type your answer here">
         </div>
