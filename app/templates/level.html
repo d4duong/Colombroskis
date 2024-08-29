@@ -31,13 +31,12 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
-    {elif data.level == 2} 
+    {% elif data.level == 2 %}
 
     <a href="{{ data.file_link }}" class="btn btn-secondary" download>Download File</a>
     <br><br>
     <p>Once you have the password, go to <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a> to decrypt it using ROT13.</p>
-    {% endif %}
-
+    
     <form method="POST">
         <div class="mb-3">
             <label for="player_input">Enter the decrypted password:</label>
@@ -46,6 +45,6 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     
-    {% elif data.level == 2 %}
+    {% endif %}
 </div>
 {% endblock %}
