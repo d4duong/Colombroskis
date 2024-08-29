@@ -2,12 +2,18 @@ def get_game_data(level):
     # TODO: Define the game data for each level, including challenges, hints, and objectives
     levels = {
         1: {
+            "level": 1,
             "objective": "Breach the Perimeter Firewall",
             "description": "You are a hacker trying to breach the AI's base. You need to find the entrance file with the encrypted password to enter the base.",
-            "hint": "Use basic command-line navigation commands such as 'ls' (or 'dir' if on a Windows device) to list files and directories within a specific directory, 'cat <.txt file>' (or 'type <.txt file>' if on a windows device) to read the contents of a file and 'cd <directory>' to move to a specific dirctory.",
-            "question": "Find the entrance.txt file and input the encrypted password into the answer bar."
-            "file_link": "/static/files/level1_password.txt",
-            "final_answer": "W!tp@$sw3rd"
+            "hint": (
+                "Download the file and navigate to the Downloads directory using the following commands:\n"
+                "1. `cd Downloads`\n"
+                "2. `ls` (to list the files in the directory)\n"
+                "3. `cat level1_password.txt` (to view the content of the file)\n"
+            ),
+            "question": "Download the file below and find the encypted password.",
+            "file_link": "/static/files/level1_password.txt", 
+            "final_answer": "J!gc@$fj3eq",
         },
         2: {
             "level": 2,
@@ -23,8 +29,8 @@ def get_game_data(level):
 def process_level(level, player_input):
     # TODO: Implement the logic for checking the player's input against the correct answer]
     correct_answers = {
-        1: "W!tp@$sw3rd",  # Final decrypted answer for Level 1
-        2: "Hello World!",  # Example answer for Level 2 (ROT13 decoding)
+        1: "J!gc@$fj3eq",  # Final decrypted answer for Level 1
+        2: "W!tp@$sw3rd",  # Example answer for Level 2 (ROT13 decoding)
         # TODO: Add more correct answers for additional levels
     }
 
