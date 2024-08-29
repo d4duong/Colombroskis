@@ -3,13 +3,15 @@ def get_game_data(level):
     levels = {
         1: {
             "objective": "Breach the Perimeter Firewall",
-            "hint": "Use basic command-line navigation to find the vulnerability.",
-            "question": "Find the file that contains the firewall configuration."
+            "description": "You are a hacker trying to breach the AI's base. You need to find the entrance file with the encrypted password to enter the base.",
+            "hint": "Use basic command-line navigation commands such as 'ls' (or 'dir' if on a Windows device) to list files and directories within a specific directory, 'cat <.txt file>' (or 'type <.txt file>' if on a windows device) to read the contents of a file and 'cd <directory>' to move to a specific dirctory.",
+            "question": "Find the entrance.txt file and input the encrypted password into the answer bar."
         },
         2: {
             "objective": "Decode the Encryption",
-            "hint": "Think about common encryption methods.",
-            "question": "Decode the encrypted message: 'Uryyb Jbeyq!'"
+            "description": "You have found the encrypted password file. You need to decode it to access the base.",
+            "hint": "Think about common encryption methods like ROT13 and substitution cipher. Try using an website like cyberChef to decode the message.",
+            "question": "Decode the encrypted password and input the decrypted password into the answer bar."
         },
         # TODO: Add more levels with increasing complexity
     }
