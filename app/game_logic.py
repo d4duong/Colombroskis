@@ -2,6 +2,7 @@ def get_game_data(level):
     # TODO: Define the game data for each level, including challenges, hints, and objectives
     levels = {
         1: {
+            "level": 1,
             "objective": "Breach the Perimeter Firewall",
             "hint": (
                 "Download the file and navigate to the Downloads directory using the following commands:\n"
