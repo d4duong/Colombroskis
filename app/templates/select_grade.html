@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Select Your Grade</h1>
+    <p class="lead">Choose your grade level to get a recommended starting point in the game.</p>
+    <hr class="my-4">
+    <form method="POST">
+        <div class="form-group">
+            <label for="grade">Grade Level:</label>
+            <select class="form-control" id="grade" name="grade">
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Start Game</button>
+    </form>
+</div>
+{% endblock %}
