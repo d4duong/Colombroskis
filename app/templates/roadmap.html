@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Game Roadmap</h1>
+    <p class="lead">Navigate through the levels using the roadmap below.</p>
+    <hr class="my-4">
+    <ul class="list-group">
+        {% for level in range(1, total_levels + 1) %}
+        <li class="list-group-item">
+            <a href="{{ url_for('main.level', level=level) }}">Level {{ level }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
