@@ -1,0 +1,335 @@
+# Chinese (Simplified) translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-08-30 08:30+1000\n"
+"PO-Revision-Date: 2024-08-30 08:24+1000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans\n"
+"Language-Team: zh_Hans <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app/templates/index.html:5
+msgid "Welcome to the EscapeTheMatrix!"
+msgstr "欢迎来到逃离矩阵！"
+
+#: app/templates/index.html:6
+msgid "Choose your grade level to get a recommended starting point in the game."
+msgstr "选择你的年级以获得游戏推荐的起点。"
+
+#: app/templates/index.html:10
+msgid "Grade Level:"
+msgstr "年级："
+
+#: app/templates/index.html:12
+msgid "Grade 7"
+msgstr "七年级"
+
+#: app/templates/index.html:13
+msgid "Grade 8"
+msgstr "八年级"
+
+#: app/templates/index.html:14
+msgid "Grade 9"
+msgstr "九年级"
+
+#: app/templates/index.html:15
+msgid "Grade 10"
+msgstr "十年级"
+
+#: app/templates/index.html:16
+msgid "Grade 11"
+msgstr "十一年级"
+
+#: app/templates/index.html:17
+msgid "Grade 12"
+msgstr "十二年级"
+
+#: app/templates/index.html:20
+msgid "Start Game"
+msgstr "开始游戏"
+
+#: app/templates/layout.html:6
+msgid "EscapeTheMatrix"
+msgstr "逃离矩阵"
+
+#: app/templates/layout.html:12
+msgid "Home"
+msgstr "主页"
+
+#: app/templates/layout.html:13
+msgid "Select Grade"
+msgstr "选择年级"
+
+#: app/templates/layout.html:14
+msgid "Roadmap"
+msgstr "路线图"
+
+#: myenv/lib/python3.12/site-packages/click/_termui_impl.py:518
+msgid "{editor}: Editing failed"
+msgstr "{editor}：编辑失败"
+
+#: myenv/lib/python3.12/site-packages/click/_termui_impl.py:522
+msgid "{editor}: Editing failed: {e}"
+msgstr "{editor}：编辑失败：{e}"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1120
+msgid "Aborted!"
+msgstr "中止！"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1309
+#: myenv/lib/python3.12/site-packages/click/decorators.py:559
+msgid "Show this message and exit."
+msgstr "显示此消息并退出。"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1340
+#: myenv/lib/python3.12/site-packages/click/core.py:1370
+msgid "(Deprecated) {text}"
+msgstr "（已弃用）{text}"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1387
+msgid "Options"
+msgstr "选项"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1415
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] "收到意外的额外参数 ({args})"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1428
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr "弃用警告：命令 {name!r} 已弃用。"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1636
+msgid "Commands"
+msgstr "命令"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1668
+msgid "Missing command."
+msgstr "缺少命令。"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:1746
+msgid "No such command {name!r}."
+msgstr "没有这样的命令 {name!r}。"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:2310
+msgid "Value must be an iterable."
+msgstr "值必须是可迭代的。"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:2333
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] "需要 {nargs} 个值，但给定了 {len} 个。"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:2778
+msgid "env var: {var}"
+msgstr "环境变量：{var}"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:2808
+msgid "(dynamic)"
+msgstr "（动态）"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:2821
+msgid "default: {default}"
+msgstr "默认：{default}"
+
+#: myenv/lib/python3.12/site-packages/click/core.py:2834
+msgid "required"
+msgstr "必需的"
+
+#: myenv/lib/python3.12/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr "%(prog)s，版本 %(version)s"
+
+#: myenv/lib/python3.12/site-packages/click/decorators.py:528
+msgid "Show the version and exit."
+msgstr "显示版本并退出。"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:44
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:80
+msgid "Error: {message}"
+msgstr "错误：{message}"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:72
+msgid "Try '{command} {option}' for help."
+msgstr "尝试 '{command} {option}' 获取帮助。"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:121
+msgid "Invalid value: {message}"
+msgstr "无效的值：{message}"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:123
+msgid "Invalid value for {param_hint}: {message}"
+msgstr "参数 {param_hint} 的值无效：{message}"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:179
+msgid "Missing argument"
+msgstr "缺少参数"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:181
+msgid "Missing option"
+msgstr "缺少选项"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:183
+msgid "Missing parameter"
+msgstr "缺少参数"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:185
+msgid "Missing {param_type}"
+msgstr "缺少 {param_type}"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:192
+msgid "Missing parameter: {param_name}"
+msgstr "缺少参数：{param_name}"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:212
+msgid "No such option: {name}"
+msgstr "没有这样的选项：{name}"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:226
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] "你是说 {possibility} 吗？"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:262
+msgid "unknown error"
+msgstr "未知错误"
+
+#: myenv/lib/python3.12/site-packages/click/exceptions.py:269
+msgid "Could not open file {filename!r}: {message}"
+msgstr "无法打开文件 {filename!r}：{message}"
+
+#: myenv/lib/python3.12/site-packages/click/formatting.py:156
+msgid "Usage:"
+msgstr "用法："
+
+#: myenv/lib/python3.12/site-packages/click/parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr "参数 {name!r} 需要 {nargs} 个值。"
+
+#: myenv/lib/python3.12/site-packages/click/parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr "选项 {name!r} 不接受值。"
+
+#: myenv/lib/python3.12/site-packages/click/parser.py:473
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] "选项 {name!r} 需要一个参数。"
+
+#: myenv/lib/python3.12/site-packages/click/shell_completion.py:318
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr "Bash 版本低于 4.4 的不支持 shell 自动完成。"
+
+#: myenv/lib/python3.12/site-packages/click/shell_completion.py:326
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr "无法检测到 Bash 版本，不支持 shell 自动完成。"
+
+#: myenv/lib/python3.12/site-packages/click/termui.py:158
+msgid "Repeat for confirmation"
+msgstr "重复确认"
+
+#: myenv/lib/python3.12/site-packages/click/termui.py:174
+msgid "Error: The value you entered was invalid."
+msgstr "错误：你输入的值无效。"
+
+#: myenv/lib/python3.12/site-packages/click/termui.py:176
+msgid "Error: {e.message}"
+msgstr "错误：{e.message}"
+
+#: myenv/lib/python3.12/site-packages/click/termui.py:187
+msgid "Error: The two entered values do not match."
+msgstr "错误：输入的两个值不匹配。"
+
+#: myenv/lib/python3.12/site-packages/click/termui.py:243
+msgid "Error: invalid input"
+msgstr "错误：无效输入"
+
+#: myenv/lib/python3.12/site-packages/click/termui.py:773
+msgid "Press any key to continue..."
+msgstr "按任意键继续..."
+
+#: myenv/lib/python3.12/site-packages/click/types.py:266
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+"选择：\n"
+"\t{choices}"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:300
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] "{value!r} 不是 {choice}。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:394
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] "{value!r} 不符合格式 {format}。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:414
+msgid "{value!r} is not a valid {number_type}."
+msgstr "{value!r} 不是有效的 {number_type}。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:470
+msgid "{value} is not in the range {range}."
+msgstr "{value} 不在范围 {range} 内。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:611
+msgid "{value!r} is not a valid boolean."
+msgstr "{value!r} 不是有效的布尔值。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:635
+msgid "{value!r} is not a valid UUID."
+msgstr "{value!r} 不是有效的 UUID。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:822
+msgid "file"
+msgstr "文件"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:824
+msgid "directory"
+msgstr "目录"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:826
+msgid "path"
+msgstr "路径"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:877
+msgid "{name} {filename!r} does not exist."
+msgstr "{name} {filename!r} 不存在。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:886
+msgid "{name} {filename!r} is a file."
+msgstr "{name} {filename!r} 是一个文件。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:894
+msgid "{name} '{filename}' is a directory."
+msgstr "{name} '{filename}' 是一个目录。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:903
+msgid "{name} {filename!r} is not readable."
+msgstr "{name} {filename!r} 不可读。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:912
+msgid "{name} {filename!r} is not writable."
+msgstr "{name} {filename!r} 不可写。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:921
+msgid "{name} {filename!r} is not executable."
+msgstr "{name} {filename!r} 不可执行。"
+
+#: myenv/lib/python3.12/site-packages/click/types.py:987
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] "需要 {len_type} 个值，但给定了 {len_value} 个。"
+

@@ -44,6 +44,115 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
+    {% elif data.level == 3 %}
+    <!-- Level 3: Bypass the AI's Login Screen using SQL injection -->
+    <div class="tutorial text-light">
+        <h2 class="text-light">Tutorial: Bypass the AI's Login Screen</h2>
+        
+        <!-- Step 1 -->
+        <div class="card mb-3 bg-dark text-light">
+            <div class="card-header bg-dark text-light"><strong>Step 1: Understanding the Login Screen</strong></div>
+            <div class="card-body bg-dark text-light">
+                <p>When you try to log into a website or a system, it usually asks for a username and a password. 
+                The system then checks if what you entered matches what's in its database. If it matches, you get in. 
+                If not, you're blocked. But what if you don't know the correct username or password? 
+                This is where your hacking skills come in handy!</p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="card mb-3 bg-dark text-light">
+            <div class="card-header bg-dark text-light"><strong>Step 2: How Does SQL Injection Work?</strong></div>
+            <div class="card-body bg-dark text-light">
+                <p>Most login screens work by using a language called SQL (Structured Query Language) 
+                to check if the username and password you entered match the data in the database. 
+                SQL is super powerful for managing data, but if the person who built the website isn't careful, 
+                it can also be used to hack into the system!</p>
+                
+                <p>Here's what usually happens when you try to log in:</p>
+                <ul>
+                    <li><strong>Normal Query:</strong><br>
+                    <code>SELECT * FROM users WHERE username = 'your_username' AND password = 'your_password';</code><br>
+                    This command checks if there's a user in the database with the username and password you entered.</li>
+
+                    <li><strong>SQL Injection:</strong><br>
+                    But what if you could change the command the system runs? That's what SQL injection lets you do! 
+                    By typing in a special sequence of characters, you can trick the system into running a different command.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="card mb-3 bg-dark text-light">
+            <div class="card-header bg-dark text-light"><strong>Step 3: The Trick to Bypass the Login</strong></div>
+            <div class="card-body bg-dark text-light">
+                <p>Instead of entering a real username and password, you're going to enter something that confuses the AI's database:</p>
+                <ul>
+                    <li><strong>Username:</strong> <code>' OR 1=1;--</code></li>
+                    <li><strong>Password:</strong> (Leave this blank or enter anything, it won't matter)</li>
+                </ul>
+                
+                <p>Here's what happens:</p>
+                <p>The system tries to check if there's a user with the username <code>' OR 1=1;--</code> and any password. 
+                But because of the special characters (<code>' OR 1=1;--</code>), the system gets tricked. 
+                It turns the normal query into something different:</p>
+                <code>SELECT * FROM users WHERE username = '' OR 1=1;--' AND password = '';</code>
+                
+                <p><strong>OR 1=1:</strong> This part is key. <code>1=1</code> is always true, so the system thinks, 
+                'Oh, there must be a user that matches!' and lets you in, even though you didn't provide a real username or password.</p>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="card mb-3 bg-dark text-light">
+            <div class="card-header bg-dark text-light"><strong>Step 4: Let's Do It</strong></div>
+            <div class="card-body bg-dark text-light">
+                <ul>
+                    <li><strong>Go to the login screen:</strong> You'll see two boxes: one for the username and one for the password.</li>
+                    <li><strong>Enter the Username:</strong> Copy and paste this into the username box: <code>' OR 1=1;--</code></li>
+                    <li><strong>Enter the Password:</strong> You can leave this blank or type anything you want.</li>
+                    <li><strong>Press Login:</strong> Watch as you bypass the AI's security and gain deeper access to the database!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="card mb-3 bg-dark text-light">
+            <div class="card-header bg-dark text-light"><strong>Step 5: What Just Happened?</strong></div>
+            <div class="card-body bg-dark text-light">
+                <p>Congratulations! You just performed a SQL injection! By using <code>' OR 1=1;--</code>, you tricked the AI's database into 
+                thinking you're a valid user, even without a real username and password. This is because the AI forgot to protect 
+                its system from this kind of attack, assuming no human could hack anymore.</p>
+            </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="card mb-3 bg-dark text-light">
+            <div class="card-header bg-dark text-light"><strong>Step 6: Stay Curious and Safe</strong></div>
+            <div class="card-body bg-dark text-light">
+                <p>Hacking into a system without permission is illegal and unethical in the real world. 
+                But in this game, you're learning how these techniques work so you can understand how to protect systems in the future. 
+                As you learn more about coding and cybersecurity, you'll be able to use these skills to build stronger, more secure systems—and maybe even become a defender against hackers!</p>
+                
+                <p>Now that you've bypassed the login screen, get ready for the next challenge as you dive even deeper into the AI's database.</p>
+            </div>
+        </div>
+
+    </div>
+    <hr class="my-4">
+    
+    {% if feedback %}
+    <div class="alert alert-info">{{ feedback }}</div>
+    {% endif %}
+    
+    <form method="POST">
+        <div class="mb-3">
+            <label for="player_input">Enter the SQL injection string:</label>
+            <input type="text" class="form-control" id="player_input" name="player_input" placeholder="Type your command here">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     
     {% endif %}
 </div>

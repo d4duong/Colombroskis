@@ -22,7 +22,27 @@ def get_game_data(level):
             "hint": "Think about common encryption methods like ROT13 and substitution cipher. Try using an website like cyberChef to decode the message.",
             "question": "Decode the encrypted password and input the decrypted password into the answer bar."
         },
-        # TODO: Add more levels with increasing complexity
+        3: {
+            "level": 3,
+            "objective": "Bypass the AI's Login Screen",
+            "description": (
+                "You have successfully infiltrated deeper into the AI's database. "
+                "To infiltrate even further, you need to bypass the login screen set up by the AI. "
+                "You do not know the login details, but luckily, the AI forgot to set up an anti-hacking program. "
+                "This is because the arrogant AI thought humans do not know how to hack anymore since "
+                "humans have relied on AI like ChatGPT for all their coding! However, being a hacker, "
+                "you know that this login page is easily bypassable. Using the provided information below, "
+                "bypass the login screen."
+            ),
+            "hint": (
+                "Use SQL injection to bypass the login screen. Try entering the following into the username field:\n"
+                "`' OR 1=1;--`\n"
+                "Leave the password field blank or enter anything.\n"
+                "This trick confuses the system into thinking you're a valid user."
+            ),
+            "question": "Bypass the login screen using the SQL injection technique described.",
+            "final_answer": "' OR 1=1;--",
+        },
     }
     return levels.get(level, {})
 
@@ -30,7 +50,8 @@ def process_level(level, player_input):
     # TODO: Implement the logic for checking the player's input against the correct answer]
     correct_answers = {
         1: "J!gc@$fj3eq",  # Final decrypted answer for Level 1
-        2: "W!tp@$sw3rd",  # Example answer for Level 2 (ROT13 decoding)
+        2: "W!tp@$sw3rd",  # Answer for Level 2 (ROT13 decoding)
+        3: "' OR 1=1;--",  # Answer for Level 3 (SQL injection)
         # TODO: Add more correct answers for additional levels
     }
 
